@@ -1,10 +1,6 @@
 public class Main {
     public static void main(String[] args) {
         int choice = 2;
-
-
-
-
         switch (choice) {
             case 1:
                 System.out.println("You ordered Coffee");
