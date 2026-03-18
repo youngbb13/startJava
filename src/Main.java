@@ -1,16 +1,11 @@
-public class Main {
+import java.util.Scanner;
+
+class Main {
     public static void main(String[] args) {
-        int choice = 2;
-        switch (choice) {
-            case 1:
-                System.out.println("You ordered Coffee");
-                break;
-            case 2:
-                System.out.println("You ordered Tea");
-                break;
-            default:
-                System.out.println("Invalid choice");
-                break;
-        }
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("What is your name? ");
+
+        String userName = myObj.nextLine();
+        System.out.println("Your name is: " + userName);
     }
 }
