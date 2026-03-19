@@ -1,11 +1,15 @@
-import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.IOException;
 
-class Main {
+public class Main {
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);
-        System.out.println("What is your name? ");
-
-        String userName = myObj.nextLine();
-        System.out.println("Your name is: " + userName);
+        try {
+            FileWriter writerTest = new FileWriter("src/test.txt");
+            writerTest.write("Hello!");
+            writerTest.close();
+            System.out.println("File created and writed!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
